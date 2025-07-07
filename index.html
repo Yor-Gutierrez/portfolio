@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>George Gutiérrez | Desarrollador Web y UX/UI</title>
+    <title>George Gutiérrez | Web & UX/UI Designer</title>
     <meta
       name="description"
-      content="Portafolio profesional de George Gutiérrez, desarrollador web con experiencia en WordPress, diseño UX/UI y SEO."
+      content="Professional portfolio of George Gutiérrez, web developer with experience in WordPress, UX/UI design, and SEO."
     />
     <meta name="author" content="George Gutiérrez" />
 
@@ -22,21 +22,18 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-
-
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-container">
         <div class="navbar-logo">
-          <img src="/documentos/gg-removebg-preview.png" alt="Logo GG" class="logo-img" />
-          
+          <img src="/documentos/gg-removebg-preview.png" alt="GG Logo" class="logo-img" />
         </div>
         <ul class="navbar-links">
           <li><a href="#blog">Blog</a></li>
           <li><a href="#speaking">Speaking</a></li>
-          <li><a href="#about">Sobre mí</a></li>
-          <li class="separado"><a href="#">ES ▾</a></li>
+          <li><a href="/about-me.html">About Me</a></li>
+          <li class="separado"><a href="#">EN ▾</a></li>
         </ul>
       </div>
     </nav>
@@ -44,20 +41,18 @@
     <header class="hero">
       <div class="hero-container">
         <section class="columna">
-<div class="hero-col izquierda">
-          <div class="bio-intro">
-<h1 class="nombre" id="titulo">Hi there, I’m <span id="cambiador"></span><span class="cursor">|</span></h1>
-
-  <p class="bio-texto">
-    A Web & UX/UI Designer passionate about merging design with code to build inclusive, functional, and delightful user experiences.<br />
-    Previously at World Business Lenders. <br />
-    Currently freelancing and helping brands grow through meaningful web design.<br />
-    Open to remote design & frontend opportunities — let’s connect!
-  </p>
-</div>
-    </div>
+          <div class="hero-col izquierda">
+            <div class="bio-intro">
+              <h1 class="nombre" id="titulo">Hi there, I’m <span id="cambiador"></span><span class="cursor">|</span></h1>
+              <p class="bio-texto">
+                A Web & UX/UI Designer passionate about merging design with code to build inclusive, functional, and delightful user experiences.<br />
+                Previously at World Business Lenders. <br />
+                Currently freelancing and helping brands grow through meaningful web design.<br />
+                Open to remote design & frontend opportunities — let’s connect 🚀!
+              </p>
+            </div>
+          </div>
         </section>
-        
 
         <div class="hero-foto-wrapper">
           <img
@@ -69,138 +64,126 @@
       </div>
     </header>
 
-  <!--<div>
-      <div class="modo-oscuro">
-        <label class="switch">
-          <input type="checkbox" id="toggleModoOscuro" />
-          <span class="slider"></span>
-        </label>
-        <span class="modo-label">Modo oscuro</span>
-      </div>
-    </div>-->
     <main id="main-oscuro">
       <div class="contenedor-main">
         <section id="proyectos">
-          <h2><strong>Mis Proyectos</strong></h2>
+          <h2><strong>My Projects</strong></h2>
           <div class="proyectos-container" id="proyectos-lista">
-            <!-- JS agregará los proyectos aquí -->
+            <!-- JS will insert projects here -->
           </div>
         </section>
-        <!-- Modal para más información -->
+
+        <!-- Modal for more info -->
         <div id="modal-info" class="modal">
           <div class="modal-content">
             <span class="close-btn">&times;</span>
             <h3 id="modal-titulo"></h3>
             <img id="modal-imagen" src="" alt="" />
             <p id="modal-detalles"></p>
-            <h4>Herramientas:</h4>
+            <h4>Tools:</h4>
             <ul id="modal-herramientas"></ul>
-            <a id="modal-link" href="#" target="_blank" class="btn-cv"
-              >Visitar Proyecto</a
-            >
+            <a id="modal-link" href="#" target="_blank" class="btn-cv">Visit Project</a>
           </div>
         </div>
+
         <section id="sobre-mi">
-          <h2>Sobre mí</h2>
+          <h2>About Me</h2>
           <div class="sobre-mi-contenido">
             <div class="sobre-mi-imagen">
               <img
                 src="/documentos/istockphoto-1090878494-612x612.jpg"
-                alt="Foto sobre mí"
+                alt="About Me Photo"
               />
             </div>
             <div class="sobre-mi-texto">
               <p id="texto-sobre-mi">
-                Soy un desarrollador web apasionado por crear experiencias
-                digitales modernas, intuitivas y funcionales. Tengo experiencia
-                con WordPress, diseño UX/UI, optimización SEO, y tecnologías
-                como JavaScript, PHP, Vue.js y Laravel.
+                I’m a web developer passionate about building modern, intuitive, and functional digital experiences. I have experience with WordPress, UX/UI design, SEO optimization, and technologies like JavaScript, PHP, Vue.js, and Laravel.
               </p>
             </div>
           </div>
         </section>
 
         <section id="habilidades">
-          <h2>Habilidades</h2>
+          <h2>Skills</h2>
           <div class="habilidades-grid">
             <div class="habilidad-card">
               <i class="fab fa-html5"></i>
               <h3>HTML5</h3>
-              <p>Estructura semántica y accesible.</p>
+              <p>Semantic and accessible structure.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fab fa-css3-alt"></i>
               <h3>CSS3</h3>
-              <p>Estilos modernos y diseño responsivo.</p>
+              <p>Modern styles and responsive design.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fab fa-js-square"></i>
               <h3>JavaScript</h3>
-              <p>Interactividad dinámica en el frontend.</p>
+              <p>Dynamic frontend interactivity.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fab fa-vuejs"></i>
               <h3>Vue.js</h3>
-              <p>Componentes reactivos y SPA modernas.</p>
+              <p>Reactive components and modern SPAs.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fab fa-laravel"></i>
               <h3>Laravel</h3>
-              <p>Framework robusto para aplicaciones PHP.</p>
+              <p>Robust PHP framework for applications.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fas fa-database"></i>
               <h3>SQL</h3>
-              <p>Consultas eficientes y manejo de bases de datos.</p>
+              <p>Efficient queries and database management.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fab fa-php"></i>
               <h3>PHP</h3>
-              <p>Lógica del lado del servidor y desarrollo backend.</p>
+              <p>Server-side logic and backend development.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fab fa-wordpress"></i>
               <h3>WordPress</h3>
-              <p>Diseño personalizado, plugins y SEO técnico.</p>
+              <p>Custom design, plugins, and technical SEO.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fas fa-paint-brush"></i>
               <h3>UX/UI</h3>
-              <p>Experiencias centradas en el usuario y diseño intuitivo.</p>
+              <p>User-centered experiences and intuitive design.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fas fa-chart-line"></i>
               <h3>Power BI</h3>
-              <p>Visualización de datos y dashboards interactivos.</p>
+              <p>Data visualization and interactive dashboards.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fas fa-code-branch"></i>
               <h3>Git & GitHub</h3>
-              <p>Control de versiones y colaboración ágil.</p>
+              <p>Version control and agile collaboration.</p>
             </div>
 
             <div class="habilidad-card">
               <i class="fas fa-search"></i>
               <h3>SEO</h3>
-              <p>Optimización técnica para mejorar el ranking en buscadores.</p>
+              <p>Technical optimization to boost search rankings.</p>
             </div>
           </div>
         </section>
 
         <section id="contacto">
-          <h2>Contáctame</h2>
+          <h2>Contact Me</h2>
           <p class="contacto-descripcion">
-            ¿Interesado en trabajar juntos? No dudes en escribirme.
+            Interested in working together? Feel free to reach out.
           </p>
 
           <div class="contacto-botones">
@@ -209,7 +192,7 @@
               target="_blank"
               class="btn-contacto"
             >
-              <i class="fas fa-envelope"></i> Enviar Email
+              <i class="fas fa-envelope"></i> Send Email
             </a>
             <a
               href="https://www.linkedin.com/in/george-gutierrez-vallejos/"
@@ -237,22 +220,22 @@
         </button>
 
         <div style="text-align: center; margin: 2rem 0">
-          <!-- Botón flotante fijo para descargar CV -->
           <a
             href="/documentos/George_Gutierrez_Web_Designer_CV_2025.pdf"
             download
             class="btn-cv btn-float-cv"
-            title="Descargar mi CV"
+            title="Download my CV"
           >
-            <i class="fas fa-file-download"></i> Descargar CV
+            <i class="fas fa-file-download"></i> Download CV
           </a>
         </div>
       </div>
     </main>
+
     <footer>
       <p>
         <strong>© 2025 George Gutiérrez</strong> |
-        <a href="georgegutierrezvallejos@gmail.com">Contáctame</a>
+        <a href="mailto:georgegutierrezvallejos@gmail.com">Contact Me</a>
       </p>
     </footer>
 

@@ -1,124 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // === PROYECTOS ===
-  const proyectos = [
-    {
-      titulo: "La Leona Waterfall Website",
-      descripcion:
-        "Sitio web turístico creado con Wix, optimizado para SEO local y experiencia de usuario.",
-      herramientas: ["Wix", "SEO", "Diseño UX/UI"],
-      detalles:
-        "Este proyecto fue desarrollado en Wix para un cliente local en Costa Rica. Se trabajó en la estructura, navegación y optimización para buscadores. Se adaptó a dispositivos móviles con un enfoque visual amigable.",
-      imagen: "documentos/WhatsApp Image 2022-02-23 at 3.01.42 PM (3).jpeg",
-      link: "https://leonawaterfallhike.com",
-    },
-    {
-      titulo: "La Leona Waterfall by Offi tours",
-      descripcion:
-        "Sitio turístico que ofrece tours a todas partes del mundo, especialmente USA, Costa Rica, Francia, México.",
-      herramientas: ["WordPress", "PHP", "SEO", "JavaScript"],
-      detalles:
-        "Desarrollo personalizado en WordPress con integración de reservas y optimización SEO. Uso de librerías JS para gestión de tiempos y calendario.",
-      imagen: "/documentos/offitours.jpg",
-      link: "https://offitours.com",
-    },
-    {
-      titulo: "Colaboración con Cityplace",
-      descripcion:
-        "Colaboración para la creación de una página web para Cityplace.",
-      herramientas: ["JavaScript", "Moment.js", "PHP"],
-      detalles:
-        "Implementación de funcionalidades dinámicas para la gestión de reservas usando librerías de tiempo y PHP para backend.",
-      imagen: "documentos/Screenshot 2025-06-25 140232.jpg",
-      link: "https://cityplacecr.com",
-    },
-  ];
+//  const proyectos = [
+//   {
+//     titulo: "La Leona Waterfall Website",
+//     puntos: [
+//       "Sitio turístico creado con Wix, optimizado para SEO local.",
+//       "Diseño UX limpio y mobile‑first.",
+//       "Cliente en Costa Rica."
+//     ],
+//     imagen: "documentos/offitours.jpg",
+//     link: "https://leonawaterfallhike.com"
+//   },
+//   // ... más proyectos
+// ];
 
-  const proyectosLista = document.getElementById("proyectos-lista");
-  const modal = document.getElementById("modal-info");
-  const modalTitulo = document.getElementById("modal-titulo");
-  const modalImagen = document.getElementById("modal-imagen");
-  const modalDetalles = document.getElementById("modal-detalles");
-  const modalHerramientas = document.getElementById("modal-herramientas");
-  const modalLink = document.getElementById("modal-link");
-  const closeBtn = document.querySelector(".close-btn");
+// const contenedor = document.getElementById("proyectos-lista");
+// proyectos.forEach(p => {
+//   const block = document.createElement("div");
+//   block.className = "project-block";
+//   block.innerHTML = `
+//     <div class="project-image">
+//       <img src="${p.imagen}" alt="${p.titulo}">
+//     </div>
+//     <div class="project-details">
+//       <h3>${p.titulo}</h3>
+// //       <ul>${p.puntos.map(pt => `<li>${pt}</li>`).join("")}</ul>
+// //       <a href="${p.link}" class="read-more" target="_blank">Read More 🔒</a>
+// //     </div>`;
+// //   contenedor.appendChild(block);
+// // });
 
-  function cargarProyectos() {
-    proyectosLista.innerHTML = "";
-
-    proyectos.forEach((proyecto, index) => {
-      const card = document.createElement("div");
-      card.className = "proyecto-card";
-
-      card.innerHTML = `
-        <img class="proyecto-img" src="${proyecto.imagen}" alt="${proyecto.titulo}">
-        <div class="proyecto-content">
-          <h3>${proyecto.titulo}</h3>
-          <p>${proyecto.descripcion}</p>
-          <div class="proyecto-buttons">
-            <a href="${proyecto.link}" target="_blank" class="btn-cv">Ver Proyecto</a>
-            <button class="btn-cv btn-info" data-index="${index}">Más Información</button>
-          </div>
-        </div>
-      `;
-
-      proyectosLista.appendChild(card);
-    });
-
-    const botonesInfo = document.querySelectorAll(".btn-info");
-    botonesInfo.forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        const i = e.target.getAttribute("data-index");
-        abrirModal(i);
-      });
-    });
-  }
-
-  function abrirModal(i) {
-    const proyecto = proyectos[i];
-    modalTitulo.textContent = proyecto.titulo;
-    modalImagen.src = proyecto.imagen;
-    modalImagen.alt = proyecto.titulo;
-    modalDetalles.textContent = proyecto.detalles;
-
-    modalHerramientas.innerHTML = "";
-    proyecto.herramientas.forEach((herr) => {
-      const li = document.createElement("li");
-      li.textContent = herr;
-      modalHerramientas.appendChild(li);
-    });
-
-    modalLink.href = proyecto.link;
-    modal.style.display = "flex";
-  }
-
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-  });
-
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-
-  document.addEventListener("click", (e) => {
-    if (e.target.classList.contains("btn-info")) {
-      const index = e.target.getAttribute("data-index");
-      const info = document.getElementById(`info-${index}`);
-      if (info) info.classList.toggle("visible");
-    }
-  });
-
-  cargarProyectos();
-
-  // === MODO OSCURO ===
-  const toggle = document.getElementById("toggleModoOscuro");
-  if (toggle) {
-    toggle.addEventListener("change", () => {
-      document.body.classList.toggle("modo-oscuro");
-    });
-  }
 });
+
 
 // cambiador
 //const palabras = ["Web Developer", "UX/UI Designer", "Wordpress Developer"]
