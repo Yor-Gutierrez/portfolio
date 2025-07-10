@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       cambiador.textContent = palabraActual.substring(0, letraIndex - 1);
       letraIndex--;
-
       if (letraIndex === 0) {
         palabraIndex++;
         escribiendo = true;
