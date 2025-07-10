@@ -4,6 +4,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 main {
   flex: 1;
@@ -15,7 +16,7 @@ main {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -356,7 +357,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
+  background-color: #fff;
   color: #333;
   line-height: 1.6;
   margin: 0;
@@ -435,8 +436,7 @@ h2 {
 .navbar {
   width: 100%;
   background-color: #fef6f3;
-  padding: 1rem 2rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -1111,6 +1111,151 @@ background: #B8860B;
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
 }
+
+.cards-layout {
+  display: flex;
+  align-items: center; /* ESTA LÍNEA alinea verticalmente el contenido con la imagen */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-color: #fffdf9;
+  border-radius: 16px;
+  padding: 5%;
+}
+
+
+.cards-layout-image {
+  flex: 1 1 30%;
+  min-width: 280px;
+  width: 90%;
+  border-radius: 4%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.95;
+}
+
+.cards-layout-image:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+
+
+.cards-layout-image-project2 img{
+   width: 700px;
+  height: 400px;
+  border-radius: 4%;
+  object-fit: cover;
+}
+
+.cards-layout-image-project2 {
+  flex: 1 1 30%;
+  min-width: 280px;
+  width: 90%;
+  border-radius: 4%;
+}
+
+
+.cards-layout-image img {
+  width: 700px;
+  height: 600px;
+  border-radius: 4%;
+  object-fit: cover;
+}
+
+
+.cards-layout-content {
+  flex: 1 1 15%;
+  min-width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* <-- CENTRA el contenido verticalmente */
+   /* Espacio superior para alinear con la imagen */
+}
+
+
+.cards-layout-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-bottom: 2rem;
+    line-height: 2.3rem;
+    text-align: left;
+}
+
+hr {
+    width: 80%;
+    border: 0px solid #f1f1f1;
+    border-top-width: 1px;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.txt3{
+    position:static;
+    padding-left: 5%;
+    padding-top: 8%;
+    font-family: "MyWebFont";
+    color: #000;
+    font-size: 200%;
+}
+
+
+.card-list-points {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+  color: #343434;
+  font-family: 'MyWebFont', sans-serif;
+  
+    margin: 0;
+    overflow: hidden;
+    font-size: 125%;
+    z-index: 8888;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    min-height: 0;
+}
+
+.card-list-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.card-check-icon {
+  width: 18px;
+  height: 18px;
+  fill: #ffd700; /* amarillo si querés */
+  flex-shrink: 0;
+}
+
+.read-more a {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #242424;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+  font-family: 'MyWebFont', sans-serif;
+}
+
+.read-more a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cards-layout {
+    flex-direction: column;
+  }
+
+  .cards-layout-content {
+    padding-top: 0;
+  }
+}
+
+
 
 
 
