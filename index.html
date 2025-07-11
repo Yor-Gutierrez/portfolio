@@ -21,6 +21,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -30,9 +33,9 @@
           <img src="/documentos/gg-removebg-preview.png" alt="GG Logo" class="logo-img" />
         </div>
         <ul class="navbar-links">
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#speaking">Speaking</a></li>
-          <li><a href="/about-me.html">About Me</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="/about-me.html">About</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li class="separado"><a href="#">EN ▾</a></li>
         </ul>
       </div>
@@ -53,20 +56,20 @@
             </div>
           </div>
         </section>
-
-        <div class="hero-foto-wrapper">
-          <img
-            src="/documentos/istockphoto-1090878494-612x612-removebg-preview.png"
-            alt="George Gutiérrez"
-            class="foto-hero"
-          />
-        </div>
+        <a href="#selected-works" class="scroll-container">
+    <svg class="scroll-arrow" width="27" height="15" xmlns="http://www.w3.org/2000/svg">
+      <path d="M25.86 1.14a.479.479 0 0 0-.679 0l-11.68 11.7L1.818 1.14a.479.479 0 1 0-.678.68l12.02 12.04a.479.479 0 0 0 .678 0L25.86 1.82a.48.48 0 0 0 0-.68z"
+            fill="#FFF" fill-rule="nonzero" stroke="#000" stroke-width="2" opacity=".9"/>
+    </svg>
+  </a>
       </div>
     </header>
+
     <div class="proyects">
-<div>
+<div id="selected-works">
   <p class="txt3">Selected works</p>
 </div>
+
 <!-- Proyecto 1 -->
 <div class="cards-layout">
   
@@ -194,147 +197,54 @@
   <hr />
 </div>
 
+<!-- Proyecto 4 -->
+<div class="cards-layout">
+  <div class="cards-layout-image">
+    <img src="documentos/hacer el collage más.png" alt="cityplace" />
+  </div>
+
+  <div class="cards-layout-content">
+    <h2>
+      🌊 Offitours | Costa Rica – Web Design & Development
+    </h2>
+
+    <ul class="card-list-points">
+      <li>
+        <svg class="card-check-icon Yellow">
+          <use xlink:href="#check"></use>
+        </svg>
+        <div>✓ Focused on an elegant and responsive WordPress layout, with a clear navigation bar, immersive imagery, and professional branding that reflects the essence of local eco-tourism.</div>
+      </li>
+      <li>
+        <svg class="card-check-icon Yellow">
+          <use xlink:href="#check"></use>
+        </svg>
+        <div>✓ Delivered a bilingual user interface and booking system, enhancing accessibility for international travelers.</div>
+      </li>
+      <li>
+        <svg class="card-check-icon Yellow">
+          <use xlink:href="#check"></use>
+        </svg>
+        <div>✓ Designed visuals and copy to highlight adrenaline experience and safety measures.</div>
+      </li>
+    </ul>
+
+    <div class="read-more">
+      <a href="https://leonawaterfallhike.com/tubing" target="_blank" style="color: #042909">Visit website ➝</a>
+    </div>
+  </div>
+</div>
     </div>
     <main id="main-oscuro">
       <div class="contenedor-main">
 
-        <!-- Modal for more info -->
-        <div id="modal-info" class="modal">
-          <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h3 id="modal-titulo"></h3>
-            <img id="modal-imagen" src="" alt="" />
-            <p id="modal-detalles"></p>
-            <h4>Tools:</h4>
-            <ul id="modal-herramientas"></ul>
-            <a id="modal-link" href="#" target="_blank" class="btn-cv">Visit website</a>
-          </div>
-        </div>
-
-        <section id="sobre-mi">
-          <h2>About Me</h2>
-          <div class="sobre-mi-contenido">
-            <div class="sobre-mi-imagen">
-              <img
-                src="/documentos/istockphoto-1090878494-612x612.jpg"
-                alt="About Me Photo"
-              />
-            </div>
-            <div class="sobre-mi-texto">
-              <p id="texto-sobre-mi">
-                I’m a web developer passionate about building modern, intuitive, and functional digital experiences. I have experience with WordPress, UX/UI design, SEO optimization, and technologies like JavaScript, PHP, Vue.js, and Laravel.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <section id="habilidades">
-          <h2>Skills</h2>
-          <div class="habilidades-grid">
-            <div class="habilidad-card">
-              <i class="fab fa-html5"></i>
-              <h3>HTML5</h3>
-              <p>Semantic and accessible structure.</p>
-            </div>
+    <h2>Tools I Work With 💼</h2>
+    <div class="habilidades-carousel">
+      <div class="carousel-track" id="carousel-track"></div>
+    </div>
+  </section>
 
-            <div class="habilidad-card">
-              <i class="fab fa-css3-alt"></i>
-              <h3>CSS3</h3>
-              <p>Modern styles and responsive design.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fab fa-js-square"></i>
-              <h3>JavaScript</h3>
-              <p>Dynamic frontend interactivity.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fab fa-vuejs"></i>
-              <h3>Vue.js</h3>
-              <p>Reactive components and modern SPAs.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fab fa-laravel"></i>
-              <h3>Laravel</h3>
-              <p>Robust PHP framework for applications.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fas fa-database"></i>
-              <h3>SQL</h3>
-              <p>Efficient queries and database management.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fab fa-php"></i>
-              <h3>PHP</h3>
-              <p>Server-side logic and backend development.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fab fa-wordpress"></i>
-              <h3>WordPress</h3>
-              <p>Custom design, plugins, and technical SEO.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fas fa-paint-brush"></i>
-              <h3>UX/UI</h3>
-              <p>User-centered experiences and intuitive design.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fas fa-chart-line"></i>
-              <h3>Power BI</h3>
-              <p>Data visualization and interactive dashboards.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fas fa-code-branch"></i>
-              <h3>Git & GitHub</h3>
-              <p>Version control and agile collaboration.</p>
-            </div>
-
-            <div class="habilidad-card">
-              <i class="fas fa-search"></i>
-              <h3>SEO</h3>
-              <p>Technical optimization to boost search rankings.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="contacto">
-          <h2>Contact Me</h2>
-          <p class="contacto-descripcion">
-            Interested in working together? Feel free to reach out.
-          </p>
-
-          <div class="contacto-botones">
-            <a
-              href="https://mail.google.com/mail/?view=cm&to=georgegutierrezvallejos@gmail.com"
-              target="_blank"
-              class="btn-contacto"
-            >
-              <i class="fas fa-envelope"></i> Send Email
-            </a>
-            <a
-              href="https://www.linkedin.com/in/george-gutierrez-vallejos/"
-              target="_blank"
-              class="btn-contacto"
-            >
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a
-              href="https://github.com/tuusuario"
-              target="_blank"
-              class="btn-contacto"
-            >
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </div>
-        </section>
 
         <button
           onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
@@ -344,25 +254,28 @@
           ↑
         </button>
 
-        <div style="text-align: center; margin: 2rem 0">
-          <a
-            href="/documentos/George_Gutierrez_Web_Designer_CV_2025.pdf"
-            download
-            class="btn-cv btn-float-cv"
-            title="Download my CV"
-          >
-            <i class="fas fa-file-download"></i> Download CV
-          </a>
-        </div>
       </div>
     </main>
 
-    <footer>
-      <p>
-        <strong>© 2025 George Gutiérrez</strong> |
-        <a href="mailto:georgegutierrezvallejos@gmail.com">Contact Me</a>
-      </p>
-    </footer>
+<footer class="custom-footer">
+  <div class="footer-content">
+    <p>Like what you see??</p>
+    <p>
+      View my <a href="#" class="resume-link">résumé</a>, get in touch 
+      <span class="emoji">👇</span>
+    </p>
+
+    <p class="contact-links">
+      <a href="mailto:georgegutierrezvallejos@gmail.com">Email 📅</a> |
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn 💼</a>
+    </p>
+
+    <p class="credit">
+      Designed and Handcoded in Costa Rica with <span class="heart">♥</span> by George Gutierrez © 2025
+    </p>
+  </div>
+</footer>
+
 
     <script src="script.js"></script>
     <script src="frases.js"></script>
