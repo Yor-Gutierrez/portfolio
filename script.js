@@ -359,8 +359,8 @@ function renderCarousel(containerId, toolsArray, repeat = 5) {
         <h3>${tool.name}</h3>
         <p>${tool.desc || ""}</p>
       `;
-      container.appendChild(card);
     });
+    container.appendChild(card);
   }
 }
 
