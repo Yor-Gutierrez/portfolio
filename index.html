@@ -33,7 +33,6 @@
           <img src="/documentos/gg-removebg-preview.png" alt="GG Logo" class="logo-img" />
         </div>
         <ul class="navbar-links">
-          <li><a href="#works">Works</a></li>
           <li><a href="/about-me.html">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li class="separado"><a href="#">EN ▾</a></li>
@@ -263,15 +262,26 @@
     </div>
     <main id="main-oscuro">
       <div class="contenedor-main">
+        <button 
+  id="btnUp"
+  class="btn-cv"
+  onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+  style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 1000;"
+>
+  ↑
+</button>
 
-        <button
-          onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
-          class="btn-cv"
-          style="position: fixed; bottom: 20px; right: 20px"
-        >
-          ↑
-        </button>
+<script>
+  const btnUp = document.getElementById("btnUp");
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      btnUp.style.display = "block"; // aparece al hacer scroll
+    } else {
+      btnUp.style.display = "none"; // desaparece al estar arriba
+    }
+  });
+</script>
       </div>
     </main>
 

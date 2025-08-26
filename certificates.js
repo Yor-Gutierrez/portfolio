@@ -1,5 +1,4 @@
-
-  function openModal(src) {
+function openModal(src) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImage");
     modal.style.display = "block";
