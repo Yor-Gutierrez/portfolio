@@ -2,9 +2,13 @@
 html,
 body {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  overflow-x: hidden;
 }
 main {
   flex: 1;
@@ -1302,34 +1306,7 @@ html {
 
 /* moile */
 
-@media (max-width: 600px) {
-  .hero {
-    text-align: center;
-    margin-top: 1re;
-  }
 
-  .hero-container {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .hero-texto {
-    order: 2;
-  }
-
-  .hero-foto-wrapper {
-    order: 1;
-  }
-
-  .nombre {
-    font-size: 2rem;
-  }
-
-  .descripcion-ligera {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-}
 
 @media screen and (max-width: 600px) {
     body {
@@ -1369,6 +1346,80 @@ html {
 }
 
 }
+
+/* 📱 Estilos generales para móviles */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  /* === HERO === */
+  .hero {
+    padding: 1rem;
+    flex-direction: column; /* apila los elementos */
+    align-items: center;
+    text-align: center; /* centra texto en móvil */
+    margin-top: 0; /* corregido, tenías margin-top:1re (typo) */
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-texto {
+    order: 2; /* texto debajo de la imagen */
+  }
+
+  .hero-foto-wrapper {
+    order: 1; /* imagen arriba */
+  }
+
+  .nombre {
+    font-size: 2rem;
+  }
+
+  .descripcion-ligera {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  /* === BIO TEXTO === */
+  .bio-texto {
+    font-size: 1.1rem;
+    text-align: left; /* lo fuerzas a izquierda en móvil */
+  }
+
+  /* === CARDS === */
+  .cards-layout {
+    flex-direction: column;  /* apilar imagen y contenido */
+    align-items: flex-start; /* alinear a la izquierda */
+    gap: 20px;
+    padding: 8%; /* más aire */
+  }
+
+  .cards-layout-image img {
+    width: 100%;
+    height: auto; /* que no se deforme */
+  }
+
+  .cards-layout-content {
+    text-align: left;
+  }
+}
+
+
+
+
+
+
+
 
 
 
